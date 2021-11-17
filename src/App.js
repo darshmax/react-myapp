@@ -2,13 +2,11 @@ import React from "react";
 import AddNewExpense from "./components/AddNewExpense";
 import Expenses from "./components/Expenses";
 
-
-
 const App = () => {
   const expenses = [
     {
       id: "e1",
-      title: "Toilet Paper",
+      title: "Refrigerator",
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
@@ -29,8 +27,8 @@ const App = () => {
 
   return (
     <div>
-     <AddNewExpense/>
-     <Expenses items={expenses}/>
+      <AddNewExpense />
+      <Expenses items={expenses} />
     </div>
   );
 };
